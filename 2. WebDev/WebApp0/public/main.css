@@ -1,0 +1,431 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+
+  /* @import 'node_modules/modern-normalize/modern-normalize.css';  npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize */         
+  /* @import "component1.css";   Component-specific stylesheets, if any.   */
+  /* Fonts sourced from Google: */
+  @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@700&family=Signika:wght@300..700&display=swap');
+  
+
+/*   ----- Variables  -----  */
+/* Specific color codes sourced from image using https://color.adobe.com/create/color-wheel */
+:root {
+    --sky-blue: #678DB1;
+    --bubble-blue: #7ED5F6;
+    --dark-navy:	#100D26;
+    --sand-brown:	#D7D29A;
+    --pale-pink:	#D9B384;
+    --purple-pink:	#835861;
+    --burnt-red: #EA5861;
+    --sky-blue-transparent: rgba(103, 141, 177, .6);
+    --dark-navy-transparent:	rgba(16, 13, 38, .88);
+    --burnt-red-transparent:	rgba(161, 61, 68, .9);
+
+  }
+  
+  /*  ----- Viewport ----- elements inherited by all remaining elements -----*/
+  body {       /* Can alternatively define in html {}. */
+    background-color: var(--dark-navy);
+    background-image: url('images/night-lake-lights-painting-background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    background-repeat: no-repeat;
+    color:var(--pale-pink);
+    font-family: "Signika", sans-serif;
+    font-size: large;
+    line-height: 1.5em;
+    margin: auto;
+    padding: 2%;
+    max-width: 1200px;
+  }
+  
+  
+  /*  ----- Page layout blocks -----  */
+  
+  header img {width: 90px; padding: 0%;}
+
+  header {
+    background-color: var(--burnt-red-transparent);
+    border: 3px solid var(--dark-navy-transparent);
+    border-radius: 12px 12px 0 0;
+    width: 99.5%;
+    color: var(--bubble-blue);
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: bold;
+    padding: 10px 0px 3px 0px;
+    vertical-align: middle;
+    text-align: center;
+    
+  }
+
+  main {
+    background-color: var(--dark-navy-transparent);
+    color: var(--pale-pink)
+  }
+  section {
+    padding: 2% 1%;
+  }
+  article {
+    margin: 1.5%;
+    
+  }
+    /* #topic1 {}
+    #topic2 {}
+  div {}
+  aside {} */
+  footer {
+    background-color: var(--burnt-red-transparent);
+    border: 2px solid var(--dark-navy-transparent);
+    border-radius: 0 0 12px 12px;
+    color: var(--bubble-blue);
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 2;
+    padding: 1%;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  /* ----- Anchors ----- Text links */
+  /* a {}
+  a:link {}
+  a:hover {}
+  a:active {}
+  a:visited {} */
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center; 
+  }
+
+  nav a {
+    flex-grow: 1;
+    background-color: var(--pale-pink);
+    border: 4px solid var(--dark-navy);
+    color: var(--dark-navy);
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 2;
+    padding: 1% 8.5%;
+    margin: .1%;
+    vertical-align: middle;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: var(--burnt-red-transparent);
+    color: var(--bubble-blue);
+  }
+
+  .local {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0; 
+    padding: 0;
+    text-decoration: none;
+  }
+
+  .local a {
+    background-color: var(--bubble-blue);
+    border: 3px dotted var(--purple-pink);
+    border-radius: 20px;
+    color: var(--dark-navy);
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 2;
+    padding: 10px 25px;
+    vertical-align: middle;
+  }
+  
+  .local a:hover {
+    background-color: var(--burnt-red-transparent);
+    border: 3px dotted var(--pale-pink);
+    border-radius: 20px;
+  }
+
+  
+  /*  -----  Typography  ----- */
+  p {}
+
+  .pageDescrip{
+    font-size: 1.2em;
+    line-height: 1.3em;
+    background-color: var(--dark-navy);
+    padding: 2%;
+    margin: 2%;
+    border: 3px solid var(--burnt-red);
+  }
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {font-family: "Anek Latin", sans-serif;}
+  h1 {}
+  h2 {
+    font-size: 2.8em;
+    line-height: 0.8em;
+    font-weight: bold;
+    text-align: center;
+  }
+  h3 {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--bubble-blue);
+  }
+  h4 {}
+  h5 {}
+  h6 {}
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: var(--bubble-blue);
+  }
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {
+    border-collapse:collapse;
+    width: 90%;
+    margin-bottom: 3%;
+    border: 2px solid var(--bubble-blue);
+  }
+  caption, thead, tbody, tr, th, td {
+    background-color: var(--dark-navy);
+    
+    padding: 1%;
+  }
+
+  caption {
+    background-color: var(--sky-blue);
+    font-weight: bolder;
+    font-size: 1.6em;
+    line-height: 1.6em;
+    color: var(--dark-navy);
+    font-family: "Anek Latin", sans-serif;
+    border: 2px solid var(--bubble-blue);
+  }
+  thead {}
+  tbody {
+    text-align: center;    
+  }
+  tfoot {}
+  tr th {
+    font-weight: bold;
+    font-family: "Anek Latin", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    padding:1%;
+    text-align: center;
+    border-bottom: 2px solid var(--bubble-blue);
+  }  
+  tr td {
+    font-family: "Signika", sans-serif;
+    padding: 1% 1% 0% 1%; 
+    border-bottom: 2px solid var(--bubble-blue);
+  }  
+  tr {}
+    tr:nth-child(odd) {}
+  th {}
+    th:nth-child(3) {text-align: right}
+    th:nth-child(2) {text-align: left; padding-left: 5%;}
+  td {}
+    td:nth-child(3) {text-align: right}
+    td:nth-child(2) {text-align: left}
+  colgroup {}
+  data {}
+  datalist {}
+  
+  
+  /*  ----- Form ----- */
+  form, button, select {
+    font-family: "Signika", sans-serif;
+    font-size: 120%;
+  }
+  fieldset {
+    border: 4px solid var(--burnt-red);
+    background-color: var(--dark-navy);
+    margin: 3%;
+    padding: 3%;
+  }
+  legend {
+    font-size: 1.8em;
+    font-family: "Anek Latin", sans-serif
+  }
+  label {
+    display: block;
+    margin: 1%;
+    padding-bottom: 1%;
+    font-size: 97%;
+  }
+  button {
+    padding: 1%;
+    font-size: 150%;
+    border: 4px solid var(--pale-pink);
+    box-shadow: var(--bubble-blue) 5px 5px 5px;
+  }
+
+  .buttonefx:hover{
+    background-color: var(--bubble-blue);
+    color: var(--burnt-red);
+  }
+
+  select {}
+    optgroup {}
+    option {}
+  textarea {
+    font-family: "Signika", sans-serif;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    padding: 1%;
+    height: 120px;
+    width: 90%;
+  }
+
+  #address {
+    height: 35px;
+    width: 90%;
+  }
+
+  #quantity {
+    height: 100%;
+    width: 10%;
+  }
+
+  input {
+    font-family: "Signika", sans-serif;
+    line-height: 1.3em;
+    font-size: 1.1em;
+    padding: 1%;
+  }
+  button, input, select, textarea {
+    background-color: var(--sky-blue);
+    color: var(--dark-navy)
+  }
+  output {}
+  meter {}
+  progress {}
+  .required { 
+    
+  }
+  .required::after {
+    content:"*";
+    color: red;
+  }
+  ::placeholder {
+    color: var(--dark-navy-transparent)
+  }
+ 
+  
+  
+  /* ----- Media ----- */
+  
+  figure {}
+    figcaption {}
+    figure img {}
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+
+  .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+  }
+  
+  .gallery figure {
+    max-width: 500px;
+    margin:1%;
+    padding:1%;
+    border: 3px solid var(--sky-blue-transparent);
+  }
+  
+  .gallery figcaption {
+    display:block; 
+    padding: 1%;
+    font-size: 1.3em;
+    color: var(--sand-brown);
+  }
+  
+  .gallery img  {
+      width: 100%;
+      margin:0;
+      padding:0;
+      border: 2px solid var(--bubble-blue);
+      
+  }
+
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+  
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}
+  

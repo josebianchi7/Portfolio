@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jose Bianchi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+        <!-- Browser logo generated using https://favicon.io/favicon-converter/> -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+    </head>
+    
+    <body>
+        <header>
+            <img src="android-chrome-192x192.png" alt="Jose Bianchi"/>  <h1>Jose Bianchi</h1>    
+        </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Order</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Web Development Concepts</h2>
+            <nav class="local">
+                <a href="#servers">Servers</a>
+                <a href="#frontend">Frontend</a>
+                <a href="#images">Images</a>
+                <a href="#favicon">Favicon</a> 
+                <a href="#stylesheets">Stylesheets</a>
+                <a href="#javaScript">JavaScript </a> 
+            </nav>
+            <article id="servers">
+                <h3>Web Servers</h3>
+                <p>
+                    <!--Prompt 1: Explain the concept of a designated home page and how its name relates to different 
+                        servers and languages.  -->
+                    <strong>Designated Homepage:</strong>
+    
+                    A designated homepage is a root directory for a webpage, which is often retrieved 
+                    when a uniform resource locator (URL) request with a “/” following the “.com”, or 
+                    equivalent, is requested. This “/” is mapped to the content or file at “/index.html”, 
+                    also known as the designated homepage on the web server. The name of a designated 
+                    homepage can reveal details about the server and language used. For example, if we see 
+                    “default.html” instead, we can presume this homepage is on the Microsoft .NET server 
+                    and C# is the programming language for .NET, which can be quickly looked up if not already known. 
+                </p>
+                <p>
+                    <!--Prompt 2:Explain what can be seen in the browser's Web Dev/Inspector Network tab output screen 
+                        (use the concepts provided in the Exploration). What is different about the file's details 
+                        when viewed from the web server versus the local computer?-->
+                    <strong>Web Dev/ Inspector Network Tab:</strong>
+    
+                    In the Web Dev/ Inspector Network tab output screen, under Headers, the webpage file may list the 
+                    request method "GET", a status code of 200 if the request was successful, and the language. This 
+                    tab also shows the last modification, how the page was accepted, the hostname, and the machine/ 
+                    browser details requesting the page. The file details differ if viewed from a web server versus 
+                    the local computer, which begins with the names in the file list to view the Headers and the 
+                    request URL. When viewing a file opened from a local computer path, the drive location instead 
+                    of a scheme like “HTTPS//” will be shown in the URL. When viewing these details from a web server, 
+                    we see items not found if viewing from a local drive, including remote address, age, cache 
+                    expiration, server, accepted data, language, hostname, further details on the user agent, and more.
+                </p>
+                <p>
+                    <!--Prompt 3: Explain why the favicon.ico file has a status 200, but the main.css and main.js files 
+                        have a status 404.-->
+                    <strong>Status Codes:</strong>
+    
+                    Of the files listed in the Web Dev/ Inspector Network tab output screen, a favicon.ico file has 
+                    been requested successfully, thus returning a status code of 200. This result is due to the OSU 
+                    web server providing that file/ resource so that their icon appears in the tab header on the browser. 
+                    The main.css and main.js files have a status code of 404 because those resources are not found on 
+                    the server for this page, due to those layers of code not yet being added to the page.
+                </p>
+                <p>
+                    <!--Prompt 4: Explain the parts of your web server's URL. What are the scheme, the subdomains, 
+                        the host domain, and the resources?-->
+                    <strong>Parts of This Page's URL:</strong>
+    
+                    For this URL on my OSU web server, the following parts include the scheme, “https://”, the subdomains, 
+                    which are “web” and “engr”, the host domain at “oregonstate.edu”, which put together, this server 
+                    hosts my HTML file resource. The resources/ path to my webpage is the remaining part of the URL, 
+                    “~bianchjo/a2-bianchjo/”. 
+                </p>
+            </article>          
+            <article id="frontend">
+                <h3>Frontend Design</h3>
+                <p>
+                    <!--Explain the concepts of frontend design.-->
+                    <strong>Frontend Design:</strong>
+
+                    Frontend design is centered on creating the most fitting experience for users. To accomplish this 
+                    goal, developers focus on key concepts including the visual design of the page, the graphical 
+                    user-interface (GUI), and the interactive experience. Starting with the visual design of the page, 
+                    consistency is required across most components from color scheme, font and typography scheme, 
+                    and photography, illustration, and icon scheme. The GUI components, for example, a scroll bar or 
+                    other navigation systems, should try to be as intuitive as possible, to allow users to navigate the 
+                    page or app easily. Lastly, the interactive experience should attract users and evolve periodically 
+                    to maintain alignment with user expectations. Maintaining a positive interactive experience can be 
+                    achieved through studying the usability/ inclusivity of a product or system.    
+                </p>
+                <dl>
+                    <!--List the five "E"s of Usability (definition list separating topic and description).-->
+                    <strong>The Five "E"s of Usability:</strong>
+                    <dt>Effective</dt>
+                    <dd>
+                        A product, system, or service should be designed to assist users achieve their
+                        goal(s) and attain accurate results. This can be achieved in a variety of ways but
+                        should keep in mind possible device interfaces or platforms and focus on user 
+                        expectations from said service or product.  
+                    </dd>
+                    <dt>Efficient</dt>
+                    <dd>
+                        To assist users, in meeting their objective(s) efficiently, the tasks should be 
+                        performed with the minimum number of steps. In addition, the objectives should be 
+                        concise and met as quickly as possible as the product, system, or service can support.
+                    </dd>
+                    <dt>Easy to Navigate</dt>
+                    <dd>
+                        When users interact with a system or product, navigation within the product or 
+                        system should be simple and intuitive, which is especially important for new 
+                        users. Also, the steps to navigate should be memorable and provide methods to 
+                        expedite locating a tool or resource for experienced users.                        
+                    </dd>
+                    <dt>Error-free</dt>
+                    <dd>
+                        Errors within a product or system should be removed immediately to avoid 
+                        accessibility and availability issues. Common friction points or errors 
+                        experienced by users can be corrected by observing users interact with the 
+                        product or system.                        
+                    </dd>
+                    <dt>Enjoyable to Use or Engaging</dt>
+                    <dd>
+                        A user's experience with a service, system, or product should be enjoyable 
+                        or engaging. The four previous "E"s of Usability are expected of users, 
+                        but if users do not feel engaged or elated while using a product or service, 
+                        they may be unlikely to be loyal customers. A great product or system needs to 
+                        match the dynamic requirements of its audience and industry.
+                    </dd>
+                </dl>
+                <p>
+                    <!--Explain the purpose of each of the 6 page layout tags used in this assignment.-->
+                    <strong>Page Layout Tags:</strong>
+                    
+                    The "header" page layout tag details the masthead or banner title for an 
+                    application or site and lets users know they are operating within the same site. 
+                    A "nav" tag takes users from the current page to other pages or affords users the 
+                    ability to navigate within the current page. The "main" tag element represents the 
+                    primary block, which contains the major content of a document. A “section” tag 
+                    is to group content that is all related or similar in objective, but does not 
+                    necessarily need to be highlighted individually. The “article” tag element is 
+                    used to detail a specific topic within a second-level headline. The “footer” tag 
+                    is placed after closing the main element and holds legal data, contact information, 
+                    and any links to essential pages. At a minimum, the footer element should have the 
+                    copyright symbol, the year of publication, and the name of the owning authority.
+                </p>
+                    <!--How do anchors link to external content, internal content, and from page-to-page?-->
+                    <strong>Anchor Links:</strong>
+                <ol>
+                    <li>
+                        To link external content on a page via an anchor, an absolute path is required. 
+                        An absolute path is implemented by inserting a full URL in an anchor element. 
+                        The URL is placed within the quotations of the anchor element, and a 
+                        description for that external site is placed within the anchor tags. 
+                        
+                    </li>
+                    <li>
+                        Anchors link to internal content by using identification (ID) selectors that 
+                        are placed within the page at desired jump points. The ID attribute will have 
+                        within quotations a topic name, and that topic name is copied into the anchor 
+                        quotations with a hashtag prefix.
+                    </li>
+                    <li>
+                        Anchors link from page-to-page by a method similar to linking to external content, 
+                        but with a relative path. A relative path directs to an additional page relative 
+                        to the initial page, preferably using only the file or page name. The additional 
+                        implementation of styled buttons can create a seamless transition that reinforces 
+                        the sense the user is within the same directory of pages. In some instances, the 
+                        URLs for the other pages resemble the initial page so greatly that it appears all 
+                        the content is on a single page.  
+                    </li>
+                </ol>    
+            </article>
+            <article id="images">
+                <h3>Optimizing Images</h3>
+                <p>
+                    <!--Optimizing images: Name and explain the purpose of the 6 major image optimizing specifications.
+                        Optimizing images: Name and explain the file formats appropriate for photos and for line art?
+                     -->
+                    <strong>6 Major Image Optimizing Specifications:</strong>
+
+                    A descriptive file name is one of the six major image optimizing specifications. File names 
+                    should provide enough data to expedite searching for an image via its name. However, the 
+                    file name should also be condensed to a few words at most in the format of all lowercase 
+                    lettering and hyphens between each word. These characteristics are especially important for 
+                    search engine optimization (SEO) to assist search engine bots file an image with similar 
+                    images with matching name components. Another major image optimizing specification is a 
+                    petite file size. This aspect is essential in saving storage space, so the image may load 
+                    as quickly as possible. Often images have so much data that they need to be compressed. 
+                    Image compression can be completed via a lossy compression and/ or a lossless compression. 
+                    A lossy compression, while very effective at reducing an image file size, will permanently 
+                    remove redundant data and other less critical information. This may result in a reduction 
+                    in resolution of the image, causing pixelation, if not done carefully. Lossless compression 
+                    may not reduce a file size as much as lossy compression, but therefore retains greater image 
+                    quality. This method is primarily used when data loss of the file must be kept to a minimum. 
+                    Images with an exact dimension is also a major image optimizing specification. Cropping is 
+                    used to fit images to their intended mediums, so that they can display as intended. Images 
+                    exceeding the dimensions of their platform space will load slowly and will affect user 
+                    experience. File format is an additional major image optimizing specification. Different 
+                    file formats are more effective at displaying certain aspects of an image than others. 
+                    For example, Scalable Vector Graphics (SVG) is efficient at providing very clean lines, 
+                    so this file type is recommended for line art and animation. Joint Photographic Group 
+                    (JPG) files are intended for online photographic images that users want to retain the 
+                    great detail captured. Following using the correct file format, reduced resolution is a 
+                    major image optimizing specification, that has become more essential as resolutions vary 
+                    across media-viewing platforms. An industry standard has been ensuring images remain in a 
+                    range of sizes to provide the best quality for the interface being used. Lastly, color mode 
+                    is a major image optimizing specification. The most common color modes being utilized by 
+                    frontend developers include Names, Hexidecimal and Hexa, Red-Green-Blue (RGB) and 
+                    Red-Green-Blue Alpha (RGBa), and hue-saturation-luminosity/ lightness (HSL) and 
+                    hue-saturation-luminosity/ lightness alpha (HSLa). These color modes can provide increasing 
+                    options for a specific color to allow industries to maintain consistency with the guidelines
+                    of a brand. RGBa and HSLa can provide the widest range of options for colors with transparency 
+                    effects.
+                </p>
+                <p>
+                    <!--Optimizing images: Name and explain the file formats appropriate for photos and for line art?-->
+                    <strong>Photo and Line Art File Formats:</strong>
+
+                    The file formats appropriate for photographs are JPG and WebP. Photos have a large amount of 
+                    information and detail, especially when taken on high-resolution cameras, and typically begin 
+                    in JPG format. Photographs can then be compressed and remain in JPG format, or can be compressed 
+                    further in WebP format, but this may noticeably reduce the quality of an image. For line art 
+                    there are suitable file formats including SVG, Portable Network Graphics (PNG), and Graphics 
+                    Interchange Format (GIF). SVG files utilize the most storage of the line art formats mentioned, 
+                    but also can provide the best quality, due to it being mathematically derived and marked with 
+                    Extensible Markup Language (XML) that is efficient at producing sharp lines. PNG files are 
+                    typically the smallest in storage and ideal for biomorphic shapes, solid colors, and line art. 
+                    This file type contains alpha channel, allowing for adjustment in transparency and removing 
+                    parts of an image like the background when needed. PNG files commonly use the RGB color mode 
+                    but can use the Index color mode for greater compression cases. Finally, GIF files have an 
+                    8-bit transparency capability, which translates to a percentage setting for transparency 
+                    adjustments. GIF files implement the Index color mode, have anti-alias edges that can smooth 
+                    out, and are often animated for short photo/ video sequences.
+                </p>
+            </article>
+            <article id="favicon">
+                <h3>Favicons</h3>
+                <p>
+                    <!--Favicons: How do browsers and devices use favicons?-->
+                    <strong>Favicons:</strong>
+
+                    By considering various file types and sizes, favicons are used by browsers and devices to 
+                    identify themselves to users. This is accomplished by showing a symbol in the browser tab 
+                    or specific entry point of an interface, which becomes an icon for that webpage or application. 
+                    It is important to remember that favicons are also referred to as favorite icons or touch icons. 
+                    The process to use a favicon begins with preparing an image to be properly outfitted for various 
+                    formats that correspond to commonly used devices and browsers. After producing or generating 
+                    multiple versions of an image, the versions are saved to an accessible location for the browser 
+                    or application. Then when prompted, the specific browser or device retrieves the appropriate file 
+                    and anchors the image to the bookmark, browser tab, and/ or search engine result. This process 
+                    can enhance the user experience and reinforce the identity of the implementing company or product 
+                    owner, which may lead to returning visitors or customers.         
+                </p>
+            </article>
+            <article id="stylesheets">
+                <h3>Cascading Stylesheets</h3>
+                <p>
+                    <!--Cascading Stylesheets: What are the main reasons to incorporate stylesheets in websites and apps?-->
+                    <strong>Reasons to Incorporate Stylesheets:</strong>
+
+                    The major reasons to incorporate Cascading Style Sheets (CSS) include improving readability, 
+                    usability, legibility, and reinforce brand recognition, through following brand guidelines. 
+                    Stylesheets afford designers the ability to edit the appearance and behavior of multiple blocks 
+                    of HTML elements to create a complete and thorough interface.     
+                </p>
+                <p>
+                    <!--Cascading Stylesheets: What are the 5 ways to incorporate styles? And why?-->
+                    <strong>Ways to Incorporate Stylesheets:</strong>
+
+                    There are five ways to incorporate stylesheets, beginning with linked global external CSS rules. 
+                    This method is the most efficient and preferred method due to being able to apply styles to any 
+                    page that links to the external global stylesheet. Any external stylesheet that is intended for 
+                    use needs to be linked within the head block tag of the website file. Additional methods to 
+                    incorporate styles include importing a global stylesheet and embedding styles directly into the 
+                    HTML file with style tags. Importing a stylesheet provides similar benefits to linking a global 
+                    stylesheet, but embedding is only useful for making direct and minor style changes to a specific 
+                    block. An older method similar to embedding is providing inline style attributes and values, but 
+                    is even less recommended than embedding. Lastly, stylesheets can be incorporated through JavaScript, 
+                    by manipulating the Document Object Model, which connects web pages to scripts. This last method 
+                    employs a tag search and updates specified object logic to apply style. 
+                </p>
+            </article>
+            <article id="javaScript">
+                <h3>JavaScript</h3>
+                <p>
+                    <!-- JavaScript: What are the main data types? -->
+                    <strong>Main Data Types:</strong>
+
+                    The main data types of a value in JavaScript include a number, a Boolean value of either true or false, 
+                    a string of characters, a symbol which is unique and immutable, the special values of “null” and “undefined” 
+                    which represent a nonexistent object and an undefined object respectively, and lastly an object, which can be 
+                    viewed as a collection of properties.     
+                </p>
+                <p>
+                    <!-- JavaScript: How are objects, arrays, and JSON used? -->
+                    <strong>Objects, Arrays, and JSON Usages:</strong>
+
+                    Objects can be used to reference, or be compared to, real world objects. By adding characteristics or properties 
+                    to an object, we can create a better comparable entity to the physical representation or give shape to a new 
+                    item or object that we want to apply further code onto. An array is used to create a sequenced object to potentially 
+                    store data sets and have the ability to recall specific instances when needed through indexing. The array can also 
+                    be used to apply code onto all or subsets of the elements in the array. Arrays are extremely useful in managing lists 
+                    of key value pairs, lists, or related data. JavaScript Object Notation (JSON) is a popular file type for exchanging 
+                    data between platforms and applications by converting objects and strings. A JSON file allows for objects to be mapped 
+                    to a string in JSON format for storage convenience and/ or create JavaScript, or other programming language, objects 
+                    from a JSON string to be recalled or manipulated in another environment. 
+                </p>
+                <p>
+                    <!-- JavaScript: How are conditionals and loops used? -->
+                    <strong>Conditionals and Loops:</strong>
+
+                    Conditional statements or operators are commonly used to apply a rule or code to an object if certain criteria are met. 
+                    Conditionals are focused around determining if an expression is true or false, or close to one of those Boolean states. 
+                    Then based on the comparison result, an action can be applied, or a result can be concluded. This is especially useful 
+                    in ensuring data entries are verified, or a system is running appropriately. Conditional statements may involve loops 
+                    which offer the ability to conduct a repeated action or apply some logic, until a predetermined end goal or break condition 
+                    is met. Loops are ideal for applying logic to multiple objects or applying various conditions to a data set or object to 
+                    ensure compliance or reach a desired output.     
+                </p>
+                <p>
+                    <!-- JavaScript: What is object-oriented programming?-->
+                    <strong>Object-Oriented Programming:</strong>
+
+                    Object-oriented programming is a style of coding in which objects with an identity, state, and behavior are created to allow 
+                    for greater modularity and structure. Objects with these traits in JavaScript can be created through special functions such 
+                    as classes like other programming languages, but do not have to be to contain many of the same properties offered by creating 
+                    a class. Object-oriented programming enhances interoperability by creating clear and readable objects that may be contained 
+                    in a hierarchy of related objects. This allows for logic or code to be applied in a waterfall type way that affects elements 
+                    in a way that resembles how physical systems are viewed or pinpoints data through the properties of an object. For example, 
+                    we define a car object and then as time progresses if we need to adjust an attribute of the object car, like seatbelt sensors 
+                    should be added to all cars, then any objects that belong to the overarching object or class can easily have that property added. 
+                </p>
+                <p>
+                    <!-- JavaScript: What is functional programming?-->
+                    <strong>Functional Programming:</strong>
+
+                    Functional programming is utilizing the powerful feature of functions to process data. Most often, there is an input or input 
+                    type that is known and an output that is desired. In this situation, we utilize “first class” values like functions to assign 
+                    variables, create higher-order functions that can apply multiple simpler functions, and possibly return a function or value 
+                    that may be utilized for future purposes. Functions are primarily constructed by creating a function name, determining how 
+                    many inputs or arguments will be accepted by the function, then applying some logic onto the arguments, followed by, but not 
+                    always, returning a result or output. Many programming languages have built-in functions for common practices. Using the “try” 
+                    statement and “catch” clause, we can account for possible errors that may normally interrupt the function or cause an undesired 
+                    or “undefined” output. Through functional programming and testing, we can create subprograms or objects that can relatively 
+                    quickly process large amounts of data or conduct several iterations of code logic or arithmetic to obtain a requested result. 
+                </p>
+            </article>    
+        </section>
+    </main>
+    <footer>
+        <p>
+            <!--Copyright statement-->
+            &copy; 2024 Jose Bianchi
+        </p>
+    </footer>
+</body>
+</html>

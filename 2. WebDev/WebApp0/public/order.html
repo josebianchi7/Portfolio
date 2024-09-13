@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jose Bianchi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+        <script src="main.js"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+    </head>
+    
+    <body>
+        <header>
+            <img src="android-chrome-192x192.png" alt="Jose Bianchi"/>  <h1>Jose Bianchi</h1>    
+        </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Order</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Order</h2>
+            <article> 
+                <p class="pageDescrip">
+                    <!--Page Decription:-->
+                    Shop here for amazing pet toys and accessories. Begin with your information for shipping, click a product,
+                    and enter a quantity up to 100 of your desired product. Be advised this page only accepts orders for one product
+                    at a time. Thank you for supporting our retail partners. Click "Submit Purchase" when complete and be sure to fill
+                    in any fields that have a red asterisk, as those are required for submission. 
+                </p>
+                <!-- Data entries from this form will populate in the response screen using the action="/orderReview" attribute 
+                    and protects more data by using POST in the method attribute-->
+                <form action="/orderReview" method="POST">
+                    <fieldset>
+                        <!-- Gather user contact and shipping information in this fieldset-->
+                        <legend>&nbsp; User Information &nbsp;</legend>
+                        <label for="name" class="required">
+                            Name: &nbsp;
+                            <input 
+                                type="text"
+                                name="userName"
+                                id="name"
+                                tabindex="1" 
+                                size="30" 
+                                maxlength="100" 
+                                autofocus 
+                                placeholder="First and Last Name"
+                                required
+                            />
+                        </label>    
+                        <label for="email" class="required">
+                            Email: &nbsp;
+                            <input
+                                type="email"
+                                name="userEmail"
+                                id="email"
+                                tabindex="2" 
+                                size="30" 
+                                maxlength="100" 
+                                placeholder="username@email_host.com"
+                                required
+                            />
+                        </label>   
+                        <label for="address" class="required">Delivery Address:</label>
+                            <textarea type="address" name="userAddress" id="address" tabindex="3" maxlength="100" placeholder="124 Sunshine Ave, Gotham, NY, 12345" required></textarea>                           
+                    </fieldset>
+                    <fieldset>
+                        <!-- Table for products in products.js file-->
+                        <legend>&nbsp; Shop &nbsp;</legend>
+                        <p>
+                            Only one product may be selected at a time. Thank you for your cooperation. 
+                        </p>
+                        <table>
+                            <caption>Featured Items</caption>
+                            <thead>
+                              <tr>
+                                <th>Company</th>
+                                <th>Product</th>
+                                <th>Price</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>AGYM</td>
+                                <td>
+                                    <label for="catBall" class="required">
+                                        <input type="radio" name="product" id="catBall" value="Spinning Cat Scratcher Ball" tabindex="4" required>
+                                        Spinning Cat Scratcher Ball
+                                    </label>
+                                </td>
+                                <td>$52.99</td>
+                              </tr>
+                              <tr>
+                                <td>Jasonwell</td>
+                                <td>
+                                    <label for="dogPool">
+                                        <input type="radio" name="product" id="dogPool" value="Foldable Dog Pool">
+                                        Foldable Dog Pool
+                                    </label>
+                                </td>
+                                <td>$27.25</td>
+                              </tr>
+                              <tr>
+                                <td>Expawlorer</td>
+                                <td>
+                                    <label for="dogWindow">
+                                        <input type="radio" name="product" id="dogWindow" value="Dog Fence Window">
+                                        Dog Fence Window
+                                    </label>
+                                </td>
+                                <td>$30.50</td>
+                              </tr>
+                              <tr>
+                                <td>Lollimeow</td>
+                                <td>
+                                    <label for="capsuleBackpack">
+                                        <input type="radio" name="product" id="capsuleBackpack" value="Capsule Pet Travel Backpack">
+                                        Capsule Pet Travel Backpack
+                                    </label>
+                                </td>
+                                <td>$59.00</td>
+                              </tr>
+                              <tr>
+                                <td>Drool'd</td>
+                                <td>
+                                    <label for="catWheel">
+                                        <input type="radio" name="product" id="catWheel" value="Cat Hamster Wheel">
+                                        Cat Hamster Wheel
+                                    </label>
+                                </td>
+                                <td>$349.75</td>
+                              </tr>
+                              <tr>
+                                <td>Lollimeow</td>
+                                <td>
+                                    <label for="bubbleBackpack">
+                                        <input type="radio" name="product" id="bubbleBackpack" value="Sherpa Bubble Cat Carrier Backpack">
+                                        Sherpa Bubble Cat Carrier Backpack
+                                    </label>
+                                </td>
+                                <td>$79.99</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <label for="quantity" class="required">
+                            Quantity of Product (max: 500):&nbsp;
+                            <input type="number" name="productQuantity" id="quantity" tabindex="5" max="500" placeholder="1 - 500" required/> 
+                        </label> 
+                        <label for="deliveryNotes">Additional Delivery Instructions:</label> 
+                            <textarea type="message" name="deliveryMessage" id="deliveryNote" tabindex="6" maxlength="300" placeholder="Gate code is... (300 characters max)"></textarea> 
+                        <label for="productSubmit">
+                            <button type="submit" tabindex="7" class="buttonefx">Submit Purchase</button>
+                        </label>                         
+                    </fieldset>
+                </form>
+            </article>    
+        </section>
+    </main>
+    <footer>
+    <p>
+        <!--Copyright statement-->
+        &copy; 2024 Jose Bianchi
+    </p>
+    </footer>
+</body>
+</html>

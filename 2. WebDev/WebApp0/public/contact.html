@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jose Bianchi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+        <script src="main.js"></script>
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png"> 
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+    </head>
+    
+    <body>
+        <header>
+            <img src="android-chrome-192x192.png" alt="Jose Bianchi"/>  <h1>Jose Bianchi</h1>    
+        </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="order.html">Order</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Contact</h2>
+            <article>
+                <p class="pageDescrip">
+                    <!-- Form explanation: -->
+                    Hello. This form is to connect with users and gather data to learn more about each other. 
+                    Within this online form, note the required responses for submission are marked with a red asterisk. 
+                    Once complete, click “Submit Form” and your responses will be recorded.      
+                </p>
+                <!-- Data entries from this form will populate in the response screen using the action="/review" attribute 
+                    and protects more data by using POST in the method attribute-->
+                <form action="/review" method="POST">
+                    <fieldset>
+                        <!-- Users can provide personal data for indentification and responses via the inputs in this fieldset-->
+                        <legend>&nbsp; Introductory Information &nbsp;</legend>
+                        <label for="name" class="required">
+                            1. Name: &nbsp;
+                            <input 
+                                type="text"
+                                name="usersName"
+                                id="name"
+                                tabindex="1" 
+                                size="25" 
+                                maxlength="100" 
+                                autofocus 
+                                placeholder="First and Last Name"
+                                required
+                                aria-required="true"
+                            />
+                        </label>    
+                        <label for="email" class="required">
+                            2. Email: &nbsp;
+                            <input
+                                type="email"
+                                name="usersEmail"
+                                id="email"
+                                tabindex="2" 
+                                size="25" 
+                                maxlength="100" 
+                                placeholder="username@email_host.com"
+                                required
+                            />
+                        </label>   
+                        <label for="messagePurpose">3. Purpose for completing this form:</label>
+                            <textarea type="text" name="purpose" id="messagePurpose" tabindex="3" maxlength="300" placeholder="I was told my name would be entered in a raffle if I complete this form. (300 charaters max)" required></textarea> 
+                    </fieldset>        
+                    <fieldset>
+                        <legend>&nbsp; Share More? &nbsp;</legend>        
+                        <label for="pages">
+                            4. Which page did spend the most time on?
+                            <select name="internalPages" id="pages" tabindex="4"> 
+                                <option value="Home">Home</option>
+                                <option value="Gallery">Gallery</option>
+                                <option value="Contact">Contact</option>
+                            </select>
+                        </label>
+                        <p>
+                            <label>
+                                5. Did you find these webpages to be informative and well-constructed?
+                            </label>
+                            <label for="yes">
+                                <input type="radio" name="muchInfo" id="yes" value="Yes" tabindex="5">
+                                Yes
+                            </label>
+                            <label for="no">
+                                <input type="radio" name="muchInfo" id="no" value="No" tabindex="6">
+                                No
+                            </label>
+                            <label for="notReally">
+                                <input type="radio" name="muchInfo" id="notReally" value="Somewhat" tabindex="7">
+                                Somewhat
+                            </label>
+                        </p>
+                        <p> 
+                            <label>
+                                6. If you return, what would you like to see more of? (Check All That Apply)
+                            </label>
+                            <label for="codes1">
+                                <input type="checkbox" name="futurePlan" id="code1" value="Coding Snippets" tabindex="9">
+                                Code Snippets<br>
+                            </label>    
+                            <label for="report2">    
+                                <input type="checkbox" name="futurePlan" id="report2" value=" Web Dev Research" tabindex="10">
+                                Explanations of Web Development<br>
+                            </label>    
+                            <label for="codeOutputs3">   
+                                <input type="checkbox" name="futurePlan" id="codeOutputs3" value=" Code Output Graphics and Files" tabindex="11">
+                                Graphs and Outputs from Codes<br>
+                            </label>    
+                            <label for="report4">   
+                                <input type="checkbox" name="futurePlan" id="report4" value=" Other Research" tabindex="12">
+                                Explanations of Other Computer Science Topics<br>
+                            </label>    
+                            <label for="pictures5">   
+                                <input type="checkbox" name="futurePlan" id="pictures5" value=" Photos of Work Experience" tabindex="13">
+                                Pictures From Previous Employments<br>
+                            </label>    
+                            <label for="pictures6">   
+                                <input type="checkbox" name="futurePlan" id="pictures6" value=" Photos of Recreational Activities" tabindex="14">
+                                Pictures of Hobbies and Adventures<br>
+                            </label>    
+                        </p>               
+                    </fieldset>
+                    <fieldset>
+                        <legend>&nbsp; Final Comments &nbsp;</legend>
+                        <label for="adviceOr"> 7. Any advice or other pieces of information you would like to share?</label>
+                            <textarea type="text" name="advice" id="adviceOr" maxlength="1000" placeholder="Do not go inside a volcano without proper protection (1000 charaters max)" tabindex="18"></textarea>
+                        <label for="finalSubmit">
+                            <p>
+                                By clicking "Submit Form" you consent to allow Jose Bianchi to store your information
+                                that has been collected by this form. You may withdraw consent at any time by 
+                                emailing Jose at bianchjo@oregonstate.edu. Thank you for your time and interest. 
+                            </p>
+                            <button type="submit" tabindex="19" class="buttonefx">Submit Form</button>
+                        </label> 
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <!--Copyright statement-->
+            &copy; 2024 Jose Bianchi    
+        </p>
+    </footer>
+</body>
+</html>
