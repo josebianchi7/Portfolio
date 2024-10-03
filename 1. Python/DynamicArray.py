@@ -1,5 +1,6 @@
 # Author: Jose Bianchi
 # GitHub username: josebianchi7
+# Description: file contains a function able to handle medium complex queries on an array.
 
 def dynamicArray(n, queries):
     """
