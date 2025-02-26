@@ -1,5 +1,4 @@
 # Jose Bianchi
-# CS 325 Practice File
 
 def bottom_up_dis_helper(buckets, x, b_table=None):
     """
